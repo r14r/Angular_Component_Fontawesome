@@ -1,0 +1,11 @@
+sudo: false
+language: node_js
+node_js: 10
+addons:
+  chrome: stable
+install:
+  - yarn
+script:
+  - yarn lint
+  - yarn test
+  - yarn build
